@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-container":"#6cf8bb","tertiary-fixed-dim":"#ffb95f","primary":"#0049be","on-secondary-container":"#00714d","surface-tint":"#0054d7","surface-bright":"#faf8ff","on-primary-fixed":"#00184a","on-error":"#ffffff","surface-container-lowest":"#ffffff","on-tertiary":"#ffffff","error-container":"#ffdad6","surface":"#faf8ff","on-secondary-fixed":"#002113","on-primary":"#ffffff","on-primary-fixed-variant":"#003fa5","on-surface-variant":"#424654","primary-container":"#1d61e7","inverse-surface":"#283044","tertiary-fixed":"#ffddb8","surface-container-low":"#f2f3ff","on-error-container":"#93000a","tertiary":"#754900","outline-variant":"#c3c6d7","surface-dim":"#d2d9f4","background":"#faf8ff","on-tertiary-fixed":"#2a1700","surface-container-high":"#e2e7ff","surface-container":"#eaedff","primary-fixed":"#dbe1ff","secondary":"#006c49","on-primary-container":"#e8ebff","on-secondary-fixed-variant":"#005236","on-secondary":"#ffffff","surface-container-highest":"#dae2fd","inverse-primary":"#b3c5ff","error":"#ba1a1a","secondary-fixed-dim":"#4edea3","primary-fixed-dim":"#b3c5ff","on-tertiary-fixed-variant":"#653e00","surface-variant":"#dae2fd","inverse-on-surface":"#eef0ff","on-background":"#131b2e","on-tertiary-container":"#ffe8d1","on-surface":"#131b2e","secondary-fixed":"#6ffbbe","tertiary-container":"#965e00","outline":"#737686"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1rem","space-md":"0.75rem","space-lg":"1rem","gutter":"0.75rem","space-xl":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem"},"fontFamily":{"headline-md":["Inter"],"headline-lg":["Inter"],"display-stat":["Inter"],"label-sm":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"label-lg":["Inter"]},"fontSize":{"headline-md":["22px",{"lineHeight":"28px","fontWeight":"700"}],"headline-lg":["30px",{"lineHeight":"38px","fontWeight":"700"}],"display-stat":["36px",{"lineHeight":"44px","fontWeight":"800"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.3px","fontWeight":"500"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.2px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.1px","fontWeight":"600"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-sm text-headline-sm text-on-surface">Biometric Instructions Step</h1></div><div class="flex items-center gap-space-sm"><button aria-label="Close or menu" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">close</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface px-margin pb-safe"><div class="flex flex-col w-full pb-6 space-y-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col space-y-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Capture Photos</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Multi-angle facial recognition enrollment</p>
+</div>
+<span class="inline-flex items-center px-space-md py-space-xs rounded-full bg-surface-container text-primary font-label-md text-label-md">
+        4 of 8 completed
+      </span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-300" style="width: 50%;"></div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tap pending frames to activate live angle verification.</p>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-gutter">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col items-center text-center space-y-space-xs">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Clear front-facing ID portrait of a young Indian male student looking straight into the academic attendance scanner, neutral calm expression, sharp focus studio lighting against neutral institutional background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFlFVia0q9LrQW41A8Cu34Bj1iNHbrwWDmoMSSNFi2-Ji6KXZWjGKxXbySbH_Ep8LP89vmLjVU3Vn2frvVDIVpSHV_xAjAkfy5XRVfIhXQ94FhsrbbUy4aK2R3ApOvJpkWaU1SYlR8XDWNf-k9jlOVc5acLBVWK59BSbURZs8uEYoVK5qndzOI_f_49TVAPCp3pNZmVJaI7FbekIbptqpW5dfrNSOBIwSMWUOb1w"/>
+<div class="absolute bottom-1 right-1 bg-secondary text-on-secondary rounded-full p-0.5 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface truncate w-full pt-1">1. Front</span>
+<span class="inline-flex items-center gap-0.5 px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[12px]">done</span> Valid
+      </span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col items-center text-center space-y-space-xs">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Authentic warm smiling portrait of a male collegiate student for facial biometric verification, direct camera gaze, natural toothy smile, even natural illumination in daylight setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8ZGjegCe3tdxYf9BoA1hEGiX8aTPoaY95e3KCb2UYKgd4k4F04ldJBLeBp72JS2LWa3JpiLERdMeEju19_U1CJr1jp6TJhUf6Zid8ehmPYFk_6fUQCxq1rbArf6AEPO6dnEu6_QjTHJD1fBvqMV9i5soo6-Oc_5zPUmgm_VSmtXqd9ozROGTbUs7tYM4gvjmc1ZOxmy0wlRjceQ2RdSfaQIYzOT_crFF0b3ct8g"/>
+<div class="absolute bottom-1 right-1 bg-secondary text-on-secondary rounded-full p-0.5 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface truncate w-full pt-1">2. Front (Smile)</span>
+<span class="inline-flex items-center gap-0.5 px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[12px]">done</span> Valid
+      </span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col items-center text-center space-y-space-xs">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Student biometric portrait angled approximately thirty degrees towards the left showing profile cheekbone and ear contour, soft indoor university office lighting, high sharpness" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkjjk-wiYVk7mHRiPy8sU_tBaIeZAKw2QSGkG-Yuo0FNMs7CSsFd9D6GZrAEO1ydo_EhPZlxPCOMupXZ4tHeE9JZdobZXZLdyhkAG-3duzzX0_Ffl78e2-xdGOlGL0d34KuhrRW0FZjgRQJdsg3EkCGo6rwbkPYuwpeo5fH-A-OZOlaUQEDfwwu9uWkmS1ZDAIU88pynAO7iVgP4ZFEols3uad4ZDjMuRJiaIPVw"/>
+<div class="absolute bottom-1 right-1 bg-secondary text-on-secondary rounded-full p-0.5 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface truncate w-full pt-1">3. Left</span>
+<span class="inline-flex items-center gap-0.5 px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[12px]">done</span> Valid
+      </span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col items-center text-center space-y-space-xs">
+<div class="relative w-full aspect-square rounded-lg overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Student attendance verification photo angled slightly right showing clean jawline and facial features clearly, neutral student look under cool institutional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeQpa-MaAYGCZxZoQG7-Q4BSeWBcOPO5fpMRfqK8bXXgZWcGxWYnh_wJfF8zyfImIWXFQD3XKncVLyRFvkbSrEWr7XnaI5BCPP2EtEQZbtXS3SHr7O9hSBeeSibxurcSXA-UshtQOlPSfFJbpE_Vki1Q98NiXtrocduRwbiNWlluRWM67o34rUBa5ayRK3Ge04mv-ISEqwj7bB4GDi3D9fOCprpIMVLYCenaU5yg"/>
+<div class="absolute bottom-1 right-1 bg-secondary text-on-secondary rounded-full p-0.5 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-on-surface truncate w-full pt-1">4. Right</span>
+<span class="inline-flex items-center gap-0.5 px-space-sm py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[12px]">done</span> Valid
+      </span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col items-center text-center space-y-space-xs hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="w-full aspect-square rounded-lg bg-surface-container-low group-hover:bg-surface-container flex flex-col items-center justify-center text-primary transition-colors">
+<span class="material-symbols-outlined text-[32px]">photo_camera</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Tap to capture</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface truncate w-full pt-1">5. Up</span>
+<span class="inline-flex items-center gap-0.5 px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">hourglass_empty</span> Pending
+      </span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col items-center text-center space-y-space-xs hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="w-full aspect-square rounded-lg bg-surface-container-low group-hover:bg-surface-container flex flex-col items-center justify-center text-primary transition-colors">
+<span class="material-symbols-outlined text-[32px]">photo_camera</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Tap to capture</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface truncate w-full pt-1">6. Down</span>
+<span class="inline-flex items-center gap-0.5 px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">hourglass_empty</span> Pending
+      </span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col items-center text-center space-y-space-xs hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="w-full aspect-square rounded-lg bg-surface-container-low group-hover:bg-surface-container flex flex-col items-center justify-center text-primary transition-colors">
+<span class="material-symbols-outlined text-[32px]">photo_camera</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Tap to capture</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface truncate w-full pt-1">7. Natural</span>
+<span class="inline-flex items-center gap-0.5 px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">hourglass_empty</span> Pending
+      </span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col items-center text-center space-y-space-xs hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="w-full aspect-square rounded-lg bg-surface-container-low group-hover:bg-surface-container flex flex-col items-center justify-center text-primary transition-colors">
+<span class="material-symbols-outlined text-[32px]">photo_camera</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Tap to capture</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface truncate w-full pt-1">8. With Glasses</span>
+<span class="inline-flex items-center gap-0.5 px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[12px]">hourglass_empty</span> Pending
+      </span>
+</div>
+</div>
+<div class="pt-space-md flex items-center gap-space-md">
+<button class="w-1/2 h-12 flex items-center justify-center gap-space-xs rounded-xl bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-container-highest transition-colors active:scale-98" onclick="history.back()" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span>Back</span>
+</button>
+<button class="w-1/2 h-12 flex items-center justify-center gap-space-xs rounded-xl bg-primary-fixed text-primary font-label-lg text-label-lg cursor-not-allowed opacity-60" disabled="" type="button">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+<span>Submit</span>
+</button>
+</div>
+</div></main></body></html>

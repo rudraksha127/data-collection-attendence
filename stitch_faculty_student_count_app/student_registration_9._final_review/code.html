@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-container":"#6cf8bb","tertiary-fixed-dim":"#ffb95f","primary":"#0049be","on-secondary-container":"#00714d","surface-tint":"#0054d7","surface-bright":"#faf8ff","on-primary-fixed":"#00184a","on-error":"#ffffff","surface-container-lowest":"#ffffff","on-tertiary":"#ffffff","error-container":"#ffdad6","surface":"#faf8ff","on-secondary-fixed":"#002113","on-primary":"#ffffff","on-primary-fixed-variant":"#003fa5","on-surface-variant":"#424654","primary-container":"#1d61e7","inverse-surface":"#283044","tertiary-fixed":"#ffddb8","surface-container-low":"#f2f3ff","on-error-container":"#93000a","tertiary":"#754900","outline-variant":"#c3c6d7","surface-dim":"#d2d9f4","background":"#faf8ff","on-tertiary-fixed":"#2a1700","surface-container-high":"#e2e7ff","surface-container":"#eaedff","primary-fixed":"#dbe1ff","secondary":"#006c49","on-primary-container":"#e8ebff","on-secondary-fixed-variant":"#005236","on-secondary":"#ffffff","surface-container-highest":"#dae2fd","inverse-primary":"#b3c5ff","error":"#ba1a1a","secondary-fixed-dim":"#4edea3","primary-fixed-dim":"#b3c5ff","on-tertiary-fixed-variant":"#653e00","surface-variant":"#dae2fd","inverse-on-surface":"#eef0ff","on-background":"#131b2e","on-tertiary-container":"#ffe8d1","on-surface":"#131b2e","secondary-fixed":"#6ffbbe","tertiary-container":"#965e00","outline":"#737686"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1rem","space-md":"0.75rem","space-lg":"1rem","gutter":"0.75rem","space-xl":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem"},"fontFamily":{"headline-md":["Inter"],"headline-lg":["Inter"],"display-stat":["Inter"],"label-sm":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"label-lg":["Inter"]},"fontSize":{"headline-md":["22px",{"lineHeight":"28px","fontWeight":"700"}],"headline-lg":["30px",{"lineHeight":"38px","fontWeight":"700"}],"display-stat":["36px",{"lineHeight":"44px","fontWeight":"800"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.3px","fontWeight":"500"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.2px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.1px","fontWeight":"600"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-sm text-headline-sm text-on-surface">Student Identity Step</h1></div><div class="flex items-center gap-space-sm"><button aria-label="Close or menu" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">close</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface px-margin pb-safe"><div class="flex flex-col w-full pb-28">
+<!-- Progress Indicator Pill & Title -->
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<div class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Step 3 of 3 • Verification</span>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Review & Submit</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Please confirm your student profile details before submission.</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">task_alt</span>
+</div>
+</div>
+</div>
+<!-- Card 1: Basic Details -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-md">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">person</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Basic Details</h3>
+</div>
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-primary hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button">
+<span>Edit</span>
+<span class="material-symbols-outlined text-[14px]">edit</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between py-1 bg-surface-container-low px-3 rounded-lg">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span class="font-body-md text-body-md">Name</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold text-right">Rudraksh Udiya</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low px-3 rounded-lg">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">tag</span>
+<span class="font-body-md text-body-md">Roll No</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold text-right">23IT101</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low px-3 rounded-lg">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span class="font-body-md text-body-md">Mobile</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold text-right">+91 9876543210</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low px-3 rounded-lg">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span class="font-body-md text-body-md">Email</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold text-right truncate max-w-[170px]">rudraksh@example.com</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Academic Details -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-md">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">school</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Academic Details</h3>
+</div>
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-primary hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button">
+<span>Edit</span>
+<span class="material-symbols-outlined text-[14px]">edit</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between py-1 bg-surface-container-low px-3 rounded-lg">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span class="font-body-md text-body-md">Year</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold text-right">2nd Year</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low px-3 rounded-lg">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">layers</span>
+<span class="font-body-md text-body-md">Semester</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold text-right">3rd Semester</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low px-3 rounded-lg">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">account_tree</span>
+<span class="font-body-md text-body-md">Department</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold text-right">IT (Info Tech)</span>
+</div>
+<div class="flex items-center justify-between py-1 bg-surface-container-low px-3 rounded-lg">
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+<span class="font-body-md text-body-md">Section</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold text-right">IT - 1</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Face Photos (8/8 Verified) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-lg shadow-sm mb-space-md">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">face</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Face Photos</h3>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">8 of 8 Angles Verified</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-primary hover:bg-surface-container-high transition-colors font-label-md text-label-md" type="button">
+<span>Edit</span>
+<span class="material-symbols-outlined text-[14px]">edit</span>
+</button>
+</div>
+<!-- 8 Rounded Photo Avatars Strip with status badges -->
+<div class="grid grid-cols-4 gap-2 pt-1">
+<div class="flex flex-col items-center gap-1">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up frontal facial portrait of a young Indian male college student with clean look, neutral expression, crisp indoor studio lighting with soft ice-blue background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoNcCU_3E2niei9H4FP5YNDXZN8-Dp6cUoSlU8Ab9zlgrNfIaXseqPjIgFw3jHtbt1aoSJNEapSzsYDxbOjWMdu5WgIyICV7LieBx7LiDun5_4B-PPhlCoLeqsNEzu6nBFPq5iJo5n0aKQYs4D3zhZ0pl_JR2DqWipsY2OoYZp7udk0fWGsA-IAJgu3ezQ_AD52nyj0OYuknz9mYoogvq2Kh4NMMmzAa49Nnea7Q"/>
+<span class="absolute bottom-1 right-1 w-3.5 h-3.5 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[10px]">
+<span class="material-symbols-outlined text-[10px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate w-full text-center">Front</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up frontal portrait of a friendly young Indian male student gently smiling, soft daylighting, clear focus on eyes and facial contours." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-HWrWevM3SE4ZF47SjB61FziLr4gOrGT4wKGaDMSmuFRbqB7mn7DHxHc2JHCuaaWaVxC68xvXHX5MDBhmkJQ9UfjVKANys2LfmN1bRzdDFmA09eB-bIz_FlxQUgqENhs5S8UWkJAfE4ASWiY29XFLBWCbOhWF6WPHqqFm1amL_DQ_opqPUppxND8cd9Ms-utxrmp0cAd81b_K42SFxcaKtPcF996gFJCekppzfQ"/>
+<span class="absolute bottom-1 right-1 w-3.5 h-3.5 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[10px]">
+<span class="material-symbols-outlined text-[10px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate w-full text-center">Smile</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up profile view angled slightly to the left of a young college male student, sharp lighting on facial geometry, academic setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs9SkzJIgmO6Le3GOAYr60x72n9psrCT50TDiOfiDCVsxX8w-4vLFh2ZPxEsAaXuQJZjFxE8dyAxD0QiCyGqK5y5WkkENg57gQ6VJeHSlpgIe3BoB0qynyWKTEmwP-AiL4FiEdnkBSAYpWrRgeTySTQ_VJJa0bMFtZQ6d64MdX7C7UO0TsGBwdkz6-4ajxf5gRy-vvcXonextyz0HoTuGEiCffb_kasEGuah6Iog"/>
+<span class="absolute bottom-1 right-1 w-3.5 h-3.5 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[10px]">
+<span class="material-symbols-outlined text-[10px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate w-full text-center">Left</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up headshot angled to the right side of a young male engineering student with natural expression and sharp details, white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMaNv5BNsCRNdzKMJ2n4n9214GgvO7yozWwPorkT5Tn_i0o0207KxsxSDc-TC62KEIoUqOck29BKfIVkDZgW_tS8CxsLCIHUGcHyGT_BFYMwDwHwnBtWFtJzC1uvFZTsSXqcDl-I5Lwl3nNeWYEkiX431j0zzo8HSR9-ebLIQVP3y-1PaCZs-eferm7ktSYwkt9l5xaeiY2_0neIb9SSwsQlxwemVnySOMyuhJ_Q"/>
+<span class="absolute bottom-1 right-1 w-3.5 h-3.5 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[10px]">
+<span class="material-symbols-outlined text-[10px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate w-full text-center">Right</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up face angle tilted slightly upwards of a young male student, crisp studio clarity, professional biometric headshot style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOpFOa4BGApOSi7rE5rGkUR7KBAuuKsTlWmUTicXTmV6j9LvzQtAoex5Oig1w5l58-3kqHnksLUS8clrblYtOflRF07kVNNY9u_Xu6IPE92PE8uM_QPwo5KrbDy3ZRB8bxoT1enN0bc9b733SOE8e7_XtMPixhxR6c0qyRF9ofCO7DtNdxyeNXETBu11AJVjptjjnDwYLD8o0VW-U68YSmeYq4aa_6cXr-dVvQLA"/>
+<span class="absolute bottom-1 right-1 w-3.5 h-3.5 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[10px]">
+<span class="material-symbols-outlined text-[10px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate w-full text-center">Up</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up headshot tilted slightly downwards of a young Indian male student looking directly at the camera sensor with neutral expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT-tgSikUvHbuw8zZXGrYwOvtTtlX3gxU6dBV7h_Iu3zgHPqMGugiURwxxWqFarCyRfrYffU_c8klrTmJ_xPLSvONT-EGTq0nivo2CwH0ueQjwQjV_lPO7JzszCFZJflxlPxbxEr0jcU11jDiZhVGlYSbmUGsrnSAtuVAvOdf5bGtr9J_QdJlieVnD0lVOUnsu_BeoS6uBqRpRnieI5CqFz9WsZXY-I7OhkeJrWg"/>
+<span class="absolute bottom-1 right-1 w-3.5 h-3.5 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[10px]">
+<span class="material-symbols-outlined text-[10px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate w-full text-center">Down</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up frontal portrait with relaxed eyes and relaxed jawline of an Indian male college undergraduate, soft even daylighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFanES_oRdvJ-bK2DJ8uAaMtickdPKGJ99uXPV3BucIEZiZyCGKX2QOYwlNepgCfOsWlLbAqUyHCjXgQUG-f7ORZN2k9Z3r40bRsz8JB7vTLApxSDJRzKv44Kuysv7lFveYhZWKBa63DycWCpfxSdY7YdMR6XORJfub5WDJI7n7rdTd0SiqKdQgTTNbmIP03cbhLR9igarJC0OLCUi60qhyht7D27jESuQSVk3sA"/>
+<span class="absolute bottom-1 right-1 w-3.5 h-3.5 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[10px]">
+<span class="material-symbols-outlined text-[10px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate w-full text-center">Natural</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<div class="relative w-14 h-14 rounded-xl overflow-hidden shadow-sm bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up frontal facial portrait of a young Indian male student with clear anti-glare spectacles, eyes visibly focused on camera, high resolution." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmgS9_O_MaqJCGu5I2NZX-GEfgEgjn8laTq4k6RPisRKRES0_Ycq8cEwjCj8-nnVwUFTIBSnS0HctHZIN7r1K6jWPj9Cu0Tuugb0COVJY5-rWWgpaFpwZnvyp-FSC92DkiJfTiMXB_mwHXYf-N6SZi7GUENG1RWD4jCbNAtrINSOolpVRGDs6VFTHB9M0OaPSMF8p2KGelDfiC27YhE4echaCNG3qWQHo3XJYyNA"/>
+<span class="absolute bottom-1 right-1 w-3.5 h-3.5 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[10px]">
+<span class="material-symbols-outlined text-[10px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate w-full text-center">Glasses</span>
+</div>
+</div>
+</div>
+<!-- Verification Note Banner -->
+<div class="w-full bg-surface-container-high rounded-xl p-space-md flex items-start gap-space-sm mb-4">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5" style="font-variation-settings: 'FILL' 1;">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+      Once submitted, Department Admin will review your attendance credentials within 24 hours. You can track status on the home portal.
+    </p>
+</div>
+<!-- Sticky Bottom Submission Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/90 backdrop-blur-md px-margin py-3 shadow-[0_-4px_16px_rgba(0,0,0,0.06)] pb-safe">
+<div class="flex items-center gap-space-sm max-w-md mx-auto w-full">
+<!-- Back Button -->
+<button class="w-1/3 h-12 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-highest transition-all flex items-center justify-center gap-1 active:scale-[0.98]" onclick="history.back()" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span class="font-label-lg text-label-lg">Back</span>
+</button>
+<!-- Submit Registration CTA -->
+<button class="flex-1 h-12 rounded-xl bg-primary-container text-on-primary hover:bg-primary shadow-md active:scale-[0.98] transition-all flex items-center justify-center gap-2 font-label-lg text-label-lg" id="submitBtn" type="button">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+<span>Submit Registration</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const btn = document.getElementById('submitBtn');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        this.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span><span>Submitting...</span>';
+        this.classList.add('opacity-90');
+        setTimeout(() => {
+          this.innerHTML = '<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: \'FILL\' 1;">check_circle</span><span>Submitted!</span>';
+          this.classList.remove('bg-primary-container');
+          this.classList.add('bg-secondary', 'text-on-secondary');
+        }, 1200);
+      });
+    }
+  })();
+</script></main></body></html>

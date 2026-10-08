@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-container":"#6cf8bb","tertiary-fixed-dim":"#ffb95f","primary":"#0049be","on-secondary-container":"#00714d","surface-tint":"#0054d7","surface-bright":"#faf8ff","on-primary-fixed":"#00184a","on-error":"#ffffff","surface-container-lowest":"#ffffff","on-tertiary":"#ffffff","error-container":"#ffdad6","surface":"#faf8ff","on-secondary-fixed":"#002113","on-primary":"#ffffff","on-primary-fixed-variant":"#003fa5","on-surface-variant":"#424654","primary-container":"#1d61e7","inverse-surface":"#283044","tertiary-fixed":"#ffddb8","surface-container-low":"#f2f3ff","on-error-container":"#93000a","tertiary":"#754900","outline-variant":"#c3c6d7","surface-dim":"#d2d9f4","background":"#faf8ff","on-tertiary-fixed":"#2a1700","surface-container-high":"#e2e7ff","surface-container":"#eaedff","primary-fixed":"#dbe1ff","secondary":"#006c49","on-primary-container":"#e8ebff","on-secondary-fixed-variant":"#005236","on-secondary":"#ffffff","surface-container-highest":"#dae2fd","inverse-primary":"#b3c5ff","error":"#ba1a1a","secondary-fixed-dim":"#4edea3","primary-fixed-dim":"#b3c5ff","on-tertiary-fixed-variant":"#653e00","surface-variant":"#dae2fd","inverse-on-surface":"#eef0ff","on-background":"#131b2e","on-tertiary-container":"#ffe8d1","on-surface":"#131b2e","secondary-fixed":"#6ffbbe","tertiary-container":"#965e00","outline":"#737686"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1rem","space-md":"0.75rem","space-lg":"1rem","gutter":"0.75rem","space-xl":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem"},"fontFamily":{"headline-md":["Inter"],"headline-lg":["Inter"],"display-stat":["Inter"],"label-sm":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"label-lg":["Inter"]},"fontSize":{"headline-md":["22px",{"lineHeight":"28px","fontWeight":"700"}],"headline-lg":["30px",{"lineHeight":"38px","fontWeight":"700"}],"display-stat":["36px",{"lineHeight":"44px","fontWeight":"800"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.3px","fontWeight":"500"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.2px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.1px","fontWeight":"600"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><main class="flex flex-col relative w-full min-h-screen bg-surface pt-safe pb-safe"><div class="flex flex-col w-full text-on-surface select-none pb-4">
+<!-- Top App Context Bar -->
+<div class="flex items-center justify-between px-space-lg py-space-sm bg-surface-container-lowest shadow-sm rounded-xl mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<button aria-label="Go Back" class="w-9 h-9 flex items-center justify-center rounded-full bg-surface-container hover:bg-surface-container-high transition-colors active:scale-95 text-on-surface" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">IT Department</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Student Registration</span>
+</div>
+</div>
+<button aria-label="Menu options" class="w-9 h-9 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Progress Bar & Step Tracker -->
+<div class="px-space-lg mb-space-md">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-md text-label-md text-primary font-semibold">Face Photo Enrollment</span>
+<span class="font-label-md text-label-md text-on-surface-variant bg-surface-container px-space-sm py-0.5 rounded-full">Photo 1 of 8</span>
+</div>
+<!-- Step Segment Indicator -->
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden flex">
+<div class="bg-primary-container h-full rounded-full transition-all duration-300" style="width: 12.5%;"></div>
+</div>
+</div>
+<!-- Biometric Viewfinder Container -->
+<div class="relative mx-space-lg rounded-xl overflow-hidden bg-inverse-surface shadow-xl aspect-[3/4] max-h-[410px] flex items-center justify-center">
+<!-- Camera Feed Stream Background (Live Feed Placeholder) -->
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A front-facing close-up portrait of a young South Asian male university student with short dark hair looking directly into the camera. Soft neutral indoor lighting mimics a university biometric verification station with high clarity and contrast against a calm academic background." id="cameraStream" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe85zr3891QAzW4FdPLFlhFG6HyAY6cNYC-NuXNo99nkcOAgHfOMgbt8glOCZA6lNkVt2f9ZlzFLNrsoOk18QUjmn-lN5O-v8LReLA2MH6q8HHUlLda7b1tLKj-tBML_ZH3tE35xeBCI4Pg0me7fgdGR-5SOcEakCztF3q10FKtMpIWK2W0hGs9RTcMYIcRuyItsSzgRksPg4WU39bVcuDOcnuZhPiBK8VjeHkgw"/>
+<!-- Ambient Subtle Gradient Vignette -->
+<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/70 pointer-events-none"></div>
+<!-- Instruction Floating Badge -->
+<div class="absolute top-space-md left-0 right-0 flex justify-center px-space-md pointer-events-none z-10">
+<div class="flex items-center gap-1.5 bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface px-space-md py-1.5 rounded-full shadow-md animate-pulse">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">center_focus_strong</span>
+<span class="font-label-md text-label-md tracking-wide">Look straight at the camera</span>
+</div>
+</div>
+<!-- Dynamic AI Face Targeting Reticle with Green Corner Brackets -->
+<div class="relative w-56 h-72 rounded-2xl pointer-events-none flex flex-col justify-between p-1 z-10">
+<!-- Reticle Glow Ambient -->
+<div class="absolute inset-0 rounded-2xl bg-secondary/10 transition-all duration-300"></div>
+<!-- Top Bracket Markers -->
+<div class="flex justify-between w-full">
+<!-- Top-Left -->
+<svg class="text-secondary-fixed drop-shadow-[0_0_8px_rgba(111,251,190,0.8)]" fill="none" height="34" viewbox="0 0 34 34" width="34">
+<path d="M4 30V10C4 6.68629 6.68629 4 10 4H30" stroke="currentColor" stroke-linecap="round" stroke-width="4.5"></path>
+</svg>
+<!-- Top-Right -->
+<svg class="text-secondary-fixed drop-shadow-[0_0_8px_rgba(111,251,190,0.8)]" fill="none" height="34" viewbox="0 0 34 34" width="34">
+<path d="M4 4H24C27.3137 4 30 6.68629 30 10V30" stroke="currentColor" stroke-linecap="round" stroke-width="4.5"></path>
+</svg>
+</div>
+<!-- Center Crosshair Micro-Guides -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-8 h-8 rounded-full border-dashed border-2 border-secondary-fixed/50 flex items-center justify-center animate-spin" style="animation-duration: 12s;">
+<div class="w-1.5 h-1.5 bg-secondary-fixed rounded-full"></div>
+</div>
+</div>
+<!-- Bottom Bracket Markers -->
+<div class="flex justify-between w-full">
+<!-- Bottom-Left -->
+<svg class="text-secondary-fixed drop-shadow-[0_0_8px_rgba(111,251,190,0.8)]" fill="none" height="34" viewbox="0 0 34 34" width="34">
+<path d="M4 4V24C4 27.3137 6.68629 30 10 30H30" stroke="currentColor" stroke-linecap="round" stroke-width="4.5"></path>
+</svg>
+<!-- Bottom-Right -->
+<svg class="text-secondary-fixed drop-shadow-[0_0_8px_rgba(111,251,190,0.8)]" fill="none" height="34" viewbox="0 0 34 34" width="34">
+<path d="M30 4V24C30 27.3137 27.3137 30 24 30H4" stroke="currentColor" stroke-linecap="round" stroke-width="4.5"></path>
+</svg>
+</div>
+<!-- Live Confidence Metric Tag -->
+<div class="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-secondary text-on-secondary px-2.5 py-0.5 rounded-full flex items-center gap-1 shadow-md">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm font-bold tracking-tight">AI 99.4% Match</span>
+</div>
+</div>
+<!-- Live Flash / Shutter Feedback Overlay (Interactivity) -->
+<div class="absolute inset-0 bg-surface-container-lowest opacity-0 pointer-events-none transition-opacity duration-150 z-20" id="captureFlash"></div>
+</div>
+<!-- Real-time Biometric Diagnostic Checklist -->
+<div class="px-space-lg mt-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold uppercase text-outline tracking-wider">Telemetry & Readiness</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span> Live Sensor Active
+        </span>
+</div>
+<div class="grid grid-cols-2 gap-y-2 gap-x-space-md pt-space-xs">
+<!-- Item 1: Face Detected -->
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">Face detected</span>
+</div>
+<!-- Item 2: Good Lighting -->
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">Good lighting</span>
+</div>
+<!-- Item 3: Clear Image -->
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">Clear image</span>
+</div>
+<!-- Item 4: Face Close Enough -->
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+<span class="font-body-sm text-body-sm font-medium text-on-surface truncate">Face is close enough</span>
+</div>
+<!-- Item 5: Single Face -->
+<div class="flex items-center gap-2 col-span-2">
+<div class="w-5 h-5 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Single face in frame (no obstructions)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Camera Interactive Control Bay -->
+<div class="mt-space-lg px-space-lg flex items-center justify-between pb-space-md">
+<!-- Torch / Exposure Toggle -->
+<button class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-transform active:scale-90 hover:bg-surface-container-highest shadow-sm" id="torchToggle" type="button">
+<span class="material-symbols-outlined text-[22px]" id="torchIcon">flashlight_on</span>
+</button>
+<!-- Biometric Capture Shutter Trigger -->
+<div class="relative flex items-center justify-center">
+<!-- Tactile Ripple / Pulse Indicator -->
+<div class="absolute w-20 h-20 rounded-full bg-primary-fixed/60 animate-ping opacity-60"></div>
+<button aria-label="Capture Biometric Photo" class="relative w-18 h-18 p-1.5 rounded-full bg-surface-container-lowest shadow-xl border-4 border-primary-container flex items-center justify-center transition-all duration-150 transform active:scale-90 hover:shadow-2xl" id="shutterBtn" type="button">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[28px]" style="font-variation-settings: 'FILL' 1;">photo_camera</span>
+</div>
+</button>
+</div>
+<!-- Camera Flip / Lens Toggle -->
+<button aria-label="Switch Camera Lens" class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant transition-all active:scale-90 hover:bg-surface-container-highest shadow-sm" id="flipCameraBtn" type="button">
+<span class="material-symbols-outlined text-[24px]">flip_camera_ios</span>
+</button>
+</div>
+<!-- Tactile Audio & Visual Feedback Handler -->
+<script>
+    (function() {
+      const shutterBtn = document.getElementById('shutterBtn');
+      const flash = document.getElementById('captureFlash');
+      const flipBtn = document.getElementById('flipCameraBtn');
+      const torchBtn = document.getElementById('torchToggle');
+      const torchIcon = document.getElementById('torchIcon');
+      let torchActive = false;
+
+      // Shutter click simulation with camera flash effect
+      if (shutterBtn && flash) {
+        shutterBtn.addEventListener('click', () => {
+          flash.classList.remove('opacity-0');
+          flash.classList.add('opacity-90');
+          
+          setTimeout(() => {
+            flash.classList.remove('opacity-90');
+            flash.classList.add('opacity-0');
+          }, 150);
+        });
+      }
+
+      // Flip button rotation
+      if (flipBtn) {
+        let rotation = 0;
+        flipBtn.addEventListener('click', () => {
+          rotation += 180;
+          flipBtn.style.transform = `rotate(${rotation}deg)`;
+        });
+      }
+
+      // Flashlight toggle
+      if (torchBtn && torchIcon) {
+        torchBtn.addEventListener('click', () => {
+          torchActive = !torchActive;
+          if (torchActive) {
+            torchBtn.classList.replace('bg-surface-container-high', 'bg-tertiary-fixed');
+            torchBtn.classList.replace('text-on-surface-variant', 'text-on-tertiary-fixed');
+            torchIcon.textContent = 'flashlight_off';
+          } else {
+            torchBtn.classList.replace('bg-tertiary-fixed', 'bg-surface-container-high');
+            torchBtn.classList.replace('text-on-tertiary-fixed', 'text-on-surface-variant');
+            torchIcon.textContent = 'flashlight_on';
+          }
+        });
+      }
+    })();
+  </script>
+</div></main></body></html>

@@ -1,0 +1,9 @@
+# Local test harness (not part of the deliverable)
+.prompt_test/
+
+# Intermediate extracted doc text
+prompt_doc_extracted.txt
+
+# OS / editor noise
+.DS_Store
+Thumbs.db

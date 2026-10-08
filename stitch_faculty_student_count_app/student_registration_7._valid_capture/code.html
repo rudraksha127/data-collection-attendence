@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-container":"#6cf8bb","tertiary-fixed-dim":"#ffb95f","primary":"#0049be","on-secondary-container":"#00714d","surface-tint":"#0054d7","surface-bright":"#faf8ff","on-primary-fixed":"#00184a","on-error":"#ffffff","surface-container-lowest":"#ffffff","on-tertiary":"#ffffff","error-container":"#ffdad6","surface":"#faf8ff","on-secondary-fixed":"#002113","on-primary":"#ffffff","on-primary-fixed-variant":"#003fa5","on-surface-variant":"#424654","primary-container":"#1d61e7","inverse-surface":"#283044","tertiary-fixed":"#ffddb8","surface-container-low":"#f2f3ff","on-error-container":"#93000a","tertiary":"#754900","outline-variant":"#c3c6d7","surface-dim":"#d2d9f4","background":"#faf8ff","on-tertiary-fixed":"#2a1700","surface-container-high":"#e2e7ff","surface-container":"#eaedff","primary-fixed":"#dbe1ff","secondary":"#006c49","on-primary-container":"#e8ebff","on-secondary-fixed-variant":"#005236","on-secondary":"#ffffff","surface-container-highest":"#dae2fd","inverse-primary":"#b3c5ff","error":"#ba1a1a","secondary-fixed-dim":"#4edea3","primary-fixed-dim":"#b3c5ff","on-tertiary-fixed-variant":"#653e00","surface-variant":"#dae2fd","inverse-on-surface":"#eef0ff","on-background":"#131b2e","on-tertiary-container":"#ffe8d1","on-surface":"#131b2e","secondary-fixed":"#6ffbbe","tertiary-container":"#965e00","outline":"#737686"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1rem","space-md":"0.75rem","space-lg":"1rem","gutter":"0.75rem","space-xl":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem"},"fontFamily":{"headline-md":["Inter"],"headline-lg":["Inter"],"display-stat":["Inter"],"label-sm":["Inter"],"headline-sm":["Inter"],"body-lg":["Inter"],"body-md":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"label-lg":["Inter"]},"fontSize":{"headline-md":["22px",{"lineHeight":"28px","fontWeight":"700"}],"headline-lg":["30px",{"lineHeight":"38px","fontWeight":"700"}],"display-stat":["36px",{"lineHeight":"44px","fontWeight":"800"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.3px","fontWeight":"500"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.2px","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.1px","fontWeight":"600"}]}}}};</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-sm text-headline-sm text-on-surface">Photo Review And Validation</h1></div><div class="flex items-center gap-space-sm"><button aria-label="Close or menu" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-[24px]">close</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface px-margin pb-safe"><div class="flex flex-col w-full pb-6">
+<!-- Progress Header Meta Info -->
+<div class="flex items-center justify-between py-space-sm mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md">
+        Step 3 of 3
+      </span>
+<span class="text-on-surface-variant font-label-md text-label-md">Biometric Enrollment</span>
+</div>
+<div class="flex items-center gap-1 font-label-md text-label-md text-primary-container font-semibold">
+<span>Photo 1 of 8</span>
+</div>
+</div>
+<!-- Segmented / Continuous Step Indicator Bar -->
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 mb-space-lg overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-[12.5%] transition-all duration-500 ease-out"></div>
+</div>
+<!-- Viewfinder Preview Card -->
+<div class="relative w-full rounded-2xl overflow-hidden shadow-sm bg-surface-container-lowest flex flex-col items-center">
+<!-- Viewfinder Visual Box -->
+<div class="relative w-full aspect-[4/5] bg-surface-container-low overflow-hidden flex items-center justify-center">
+<img class="w-full h-full object-cover object-center" data-alt="Sharp high-resolution studio quality headshot of a college student against a neutral soft studio backdrop, calm neutral expression, crisp focus, clear front-facing student ID biometric enrollment photograph with balanced indoor lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt9ekOLTb4SQCu8q0g90sZaxlFaCbLsC-FFDWdTNjaT7bAQsaPY8llipOPt6rYOsA3DbsfOix0vhJ3MaqKCxzObsQvGKmQjb2UrZo6ajoNKTwM6WfNYmhA3yynu_1Dx_4LIhyUBjAa809Rrf-YZatFRRnFhKrNBgUrw0uBEsF8IPWYYzVRRGibV_DF8l_LDv66LgaI3GlBKfdw0dzrkMt1GYETIizwwqOJcTgYXA"/>
+<!-- Biometric Quality Anchor Markers -->
+<div class="absolute inset-4 pointer-events-none flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<div class="w-6 h-6 border-l-2 border-t-2 border-secondary-container rounded-tl-lg shadow-sm"></div>
+<div class="w-6 h-6 border-r-2 border-t-2 border-secondary-container rounded-tr-lg shadow-sm"></div>
+</div>
+<div class="flex justify-between items-end">
+<div class="w-6 h-6 border-l-2 border-b-2 border-secondary-container rounded-bl-lg shadow-sm"></div>
+<div class="w-6 h-6 border-r-2 border-b-2 border-secondary-container rounded-br-lg shadow-sm"></div>
+</div>
+</div>
+<!-- Live Quality Indicator Badge Overlay -->
+<div class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-wide uppercase">HD Clarity</span>
+</div>
+<!-- Pose Directive Pill -->
+<div class="absolute bottom-3 px-3 py-1 rounded-full bg-inverse-surface/85 backdrop-blur-md shadow-sm">
+<span class="text-inverse-on-surface font-label-md text-label-md">Front Portrait • Angle 0°</span>
+</div>
+</div>
+<!-- Success Validation Banner -->
+<div class="w-full p-space-md bg-surface-container-lowest flex flex-col gap-space-xs">
+<div class="w-full bg-secondary-container/30 px-space-md py-space-sm rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-7 h-7 rounded-full bg-secondary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-on-secondary text-[18px]">check</span>
+</div>
+<div class="flex flex-col truncate">
+<span class="font-label-lg text-label-lg text-on-secondary-container truncate">Photo captured successfully</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Lighting, focus & angle verified</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px] shrink-0">verified</span>
+</div>
+</div>
+</div>
+<!-- Quality Checklist Chips -->
+<div class="grid grid-cols-3 gap-2 mt-space-md">
+<div class="bg-surface-container-low px-2 py-2 rounded-xl flex items-center gap-1.5 justify-center">
+<span class="material-symbols-outlined text-secondary text-[16px]">visibility</span>
+<span class="font-label-sm text-label-sm text-on-surface">Eyes Open</span>
+</div>
+<div class="bg-surface-container-low px-2 py-2 rounded-xl flex items-center gap-1.5 justify-center">
+<span class="material-symbols-outlined text-secondary text-[16px]">wb_sunny</span>
+<span class="font-label-sm text-label-sm text-on-surface">Optimal Light</span>
+</div>
+<div class="bg-surface-container-low px-2 py-2 rounded-xl flex items-center gap-1.5 justify-center">
+<span class="material-symbols-outlined text-secondary text-[16px]">crop_free</span>
+<span class="font-label-sm text-label-sm text-on-surface">Centered</span>
+</div>
+</div>
+<!-- Guidance Microcopy Note -->
+<div class="mt-space-md px-1 flex items-start gap-space-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px] text-primary-container shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm leading-tight">
+      This sample will be enrolled as your primary profile baseline for daily attendance matching.
+    </p>
+</div>
+<!-- Bottom Action Bar -->
+<div class="mt-space-xl pt-space-sm flex items-center gap-space-md w-full">
+<!-- Retake Button -->
+<button class="flex-1 h-12 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-space-xs transition-colors active:scale-[0.98]" id="retake-btn" onclick="handleRetake()" type="button">
+<span class="material-symbols-outlined text-[20px] text-on-surface-variant">replay</span>
+<span>Retake</span>
+</button>
+<!-- Save & Continue Button -->
+<button class="flex-1 h-12 rounded-xl bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg shadow-sm flex items-center justify-center gap-space-xs transition-all active:scale-[0.98]" id="save-btn" onclick="handleSave()" type="button">
+<span>Save Photo</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<script>
+  function handleRetake() {
+    const btn = document.getElementById('retake-btn');
+    if (btn) {
+      btn.classList.add('opacity-70');
+      setTimeout(() => {
+        btn.classList.remove('opacity-70');
+      }, 300);
+    }
+  }
+
+  function handleSave() {
+    const btn = document.getElementById('save-btn');
+    if (btn) {
+      btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">progress_activity</span><span>Saving...</span>';
+      setTimeout(() => {
+        btn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span><span>Saved!</span>';
+      }, 500);
+    }
+  }
+</script></main></body></html>
