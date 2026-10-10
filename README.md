@@ -1,6 +1,10 @@
 # data-collection-attendence
 
-Production Next.js frontend for the student data-collection & attendance system, built from the Google Stitch design source of truth (`stitch_faculty_student_count_app/`).
+Production Next.js frontend + FastAPI backend for the student data-collection & attendance system, built from the Google Stitch design source of truth (`stitch_faculty_student_count_app/`).
+
+- `frontend/` — Next.js PWA (this repo's UI)
+- `backend/` — FastAPI modular monolith (PROMPT 1: collect → validate → store → admin review) — see `backend/README.md`
+- `BACKEND_FRONTEND_CONTRACT.md` — the field/endpoint/error contract both sides implement
 
 ## Stack
 

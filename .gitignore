@@ -7,3 +7,12 @@ prompt_doc_extracted.txt
 # OS / editor noise
 .DS_Store
 Thumbs.db
+
+# Backend runtime artifacts (never commit DBs, uploaded photos, secrets, caches)
+backend/.env
+backend/*.db
+backend/storage/
+backend/test_storage/
+__pycache__/
+*.pyc
+.pytest_cache/
